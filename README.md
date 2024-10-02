@@ -1,13 +1,13 @@
-# Project Name: Learnlytics
+#  LEARNLYTICS: AI-POWERED STUDENT LEARNING BEHAVIOR ANALYZER WITH PREDICTIVE MODELING
 
 ## Overview
 Learnlytics is an intelligent platform designed to analyze and predict students' academic performance. It utilizes data analytics and machine learning to help educators and administrators provide personalized support and recommendations for students based on their progress.
 
 ## Team Members
-- **Surabhi Jaiswal**: Frontend Developer
-- **Member 2**: Backend Developer
-- **Member 3**: Database Administrator
-- **Member 4**: Project Manager
+- Himanshu Sopra: Backend Developer
+- Nidhi Sharma: Frontend Developer
+- Oshin Nandwal: Frontend Developer
+- Surabhi Jaiswal: Project Leader
 
 ## Features
 - Real-time performance tracking
