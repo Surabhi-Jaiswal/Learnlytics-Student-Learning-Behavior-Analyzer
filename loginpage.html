@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learnylytics Login</title>
+    <style>
+        /* Reset and Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f0f4f8;
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        /* Login Container */
+        .login-container {
+            background-color: #009688;
+            /* Peacock green */
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 450px;
+            color: #fff;
+        }
+
+        /* Headings */
+        .login-container h1 {
+            text-align: center;
+            font-size: 32px;
+            margin-bottom: 20px;
+        }
+
+        /* Form Styles */
+        form {
+            width: 100%;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+            color: #ffffff;
+        }
+
+        input[type="text"],
+        input[type="password"],
+        select {
+            width: 100%;
+            padding: 12px 15px;
+            border: 1px solid #b2dfdb;
+            border-radius: 5px;
+            font-size: 16px;
+            transition: border-color 0.3s;
+        }
+
+        input[type="text"]:focus,
+        input[type="password"]:focus,
+        select:focus {
+            border-color: #ffffff;
+            /* White border on focus */
+            outline: none;
+        }
+
+        /* Submit Button */
+        .submit-btn {
+            width: 100%;
+            padding: 14px;
+            background-color: #004d40;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            font-size: 18px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .submit-btn:hover {
+            background-color: #003d30;
+            /* Darker shade on hover */
+        }
+
+        /* Responsive Design */
+        @media (min-width: 768px) {
+            .login-container {
+                max-width: 600px;
+            }
+
+            .login-container h1 {
+                font-size: 36px;
+            }
+
+            .submit-btn {
+                font-size: 20px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .login-container {
+                padding: 30px;
+            }
+
+            .login-container h1 {
+                font-size: 28px;
+            }
+
+            .submit-btn {
+                font-size: 16px;
+            }
+        }
+
+        @media (max-width: 320px) {
+            .login-container {
+                padding: 20px;
+            }
+
+            .login-container h1 {
+                font-size: 24px;
+            }
+
+            .submit-btn {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="login-container">
+        <h1>Learnylytics Login</h1>
+        <form id="login-form">
+            <!-- Username -->
+            <div class="form-group">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" placeholder="Enter your username" required>
+            </div>
+
+            <!-- Password -->
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="Enter your password" required>
+            </div>
+
+            <!-- Role Selector -->
+            <div class="form-group">
+                <label for="role">Login as</label>
+                <select id="role" name="role" required>
+                    <option value="" disabled selected>Select role</option>
+                    <option value="educator">Educator</option>
+                    <option value="student">Student</option>
+                </select>
+            </div>
+
+            <!-- Submit Button -->
+            <button type="submit" class="submit-btn">Login</button>
+        </form>
+    </div>
+
+</body>
+
+</html>
